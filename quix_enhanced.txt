@@ -1,0 +1,58 @@
+> This is a Quix Command File edited by Roel Willems
+> This is the original Quix file made by Joost de Valk enhanced with personal commands and some commands ripped from Merlin Mann and Donald Curtis's Custom Quix Commands
+>
+> For the syntax of this file, please refer to http://quixapp.com/syntax/
+
+@Basic commands
+@These are additional basic commands for Quix.
+md		javascript:location.href='http://www.aaronsw.com/2002/html2text/?url='+document.location.href;			Transform this page into Markdown
+eye		javascript:void(window.open('http://tineye.com/search?pluginver=bookmark_1.0&url='%20+%20encodeURIComponent(document.URL)));	TinyEye: Where's this image form?
+encode	http://meyerweb.com/eric/tools/dencoder/							Encode/Decode URL
+decode	http://meyerweb.com/eric/tools/dencoder/							Encode/Decode URL
+
+@Social commands
+@These commands additional commands for dealing with social networks and social sites.
+@bolt	javascript:(function(){var%20d=document,w=window;w.__m4to=w.setTimeout(function(){w.location.href="https://bo.lt/app/widget/bookmarklet/fallback?url="%20encodeURIComponent(window.location.href)%20"&p=8df1ccd2a8ea9ae010e3424f974d7ead45bccd63";},10000);var%20script=d.createElement("script");script.src="https://bo.lt/app/bookmarklet.js?p=8df1ccd2a8ea9ae010e3424f974d7ead45bccd63&r="Math.floor(Math.random()%20*%20100000);script.type="text/javascript";d.getElementsByTagName("head")[0].appendChild(script);})();	Share a page on Twitter, Facebook or G+ with BO.LT
+
+@WordPress
+@Quix was of course created by <a href="http://yoast.com">Yoast</a>, a WordPress addict, and as such, some WordPress functions are of course needed! Here you will find additional commands
+
+@SEO
+@Additional commands for SEO's.
+hs			javascript:document.location%20=%20'http://httpstatus.nl/?url='+encodeURIComponent(document.location);		Go to HTTP Status Code Checker
+
+@Webmaster
+@Additional webmasters commands.
+
+
+@Quix
+@Additional Quix commands that should help you to debug and work with Quix.
+extend		http://quixapp.com/extend/														Takes you to the Extend Quix page
+
+@Analytics
+@Some simple scripts to detect which web analytics program a site is running and to debug 	Google Analytics 
+gastatus	http://www.google.com/analytics/status#hl=en									Check the Google Analytics system status
+regex		http://strfriend.com/															Go to StrFriend.com to check your regex
+export		javascript:function%20post_andre(params){var%20form%20=%20document.createElement("form");%20form.setAttribute("method","post");%20form.setAttribute("action","exportReport");%20for(var%20key%20in%20params){var%20hiddenField%20=%20document.createElement("input");%20hiddenField.setAttribute("type","hidden");%20hiddenField.setAttribute("name",key);%20hiddenField.setAttribute("value",params[key]);%20form.appendChild(hiddenField);}%20document.body.appendChild(form);form.submit();}var%20rowcount=prompt("Amount%20of%20rows%20(10-10000):","100");%20hashes=unescape(location.hash).split("/");%20date0=hashes[3].substr(hashes[3].indexOf(".date00")+8,8);%20date1=hashes[3].substr(hashes[3].indexOf(".date01")+8,8);%20post_andre({'_.date00':date0,%20'_.date01':date1,%20'explorer-table.rowStart':'0',%20'explorer-table.rowCount':rowcount+'',%20'id':hashes[1],%20'ds':hashes[2],%20'ef':'TSV',%20'exportUrl':location.href});		Export more than 500 rows in new (v5) Google Analytics interface http://andrescholten.net/how-to-export-more-than-500-rows-in-new-google-analytics-interface/
+
+
+@Conversion
+@ Some simple commands to help make conversion optimization and usability testing a bit easier
+fold	http://www.foldtester.com/#/%r	Check the fold of the current page
+loadsin	http://loads.in/	Check how fast the page is loading with loads.in
+pagespeed	https://developers.google.com/pagespeed/#url=%r&mobile=false	Check Google Pagespeed
+mobspeed	https://developers.google.com/pagespeed/#url=%r&mobile=true		Check Google Pagespeed Mobile
+pingdom		http://tools.pingdom.com/	Check pageloadtime with Pingdom
+webpagetest	http://www.webpagetest.org/	Check pageload time wil Webpagetest.org
+
+
+@URL Shortening
+@Additional URL shorteners
+
+@Additional app Integration commands
+@Integrate with cool programs on all platforms.
+ril			javascript:(function(){ISRIL_H='e9d9';ISRIL_SCRIPT=document.createElement('SCRIPT');ISRIL_SCRIPT.type='text/javascript';ISRIL_SCRIPT.src='http://readitlaterlist.com/b/r.js';document.getElementsByTagName('head')[0].appendChild(ISRIL_SCRIPT)})();	Add page to <a href="http://readitlater.com">ReaditLater</a> list
+
+@Additional Mac Integration commands
+@A lot of Mac programs allow easy integration with browsers by allowing for URL's like <code>tweetie:</code> to open them. These commands take full advantage of that.
+omni		omnifocus:///add?note=%r&name=%t						Add URL directly to OmniFocus
