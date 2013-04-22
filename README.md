@@ -1,6 +1,5 @@
 Quix-Enhanced
 =============
-# Quix-Enhanced
 * Name: Quix Enhanced Command File
 * Author: Roel Willems
 * Version 1.5
